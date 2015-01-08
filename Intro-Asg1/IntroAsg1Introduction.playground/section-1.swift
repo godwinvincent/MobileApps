@@ -1,5 +1,7 @@
+
 class Class
 {
+    
     var className:String
     var roomNumber:String
     var subject:String

@@ -1,21 +1,22 @@
 What does the keyword “let” allow one to create?
-a. random cariable
+a. random variable
 b. constant
 c. class
 d. coopertition
-
+Answer: b
 Are parentheses required in the conditional statement of a loop?
 a. Yes
 b. No
-
+Answer: b
 A dictionary is most like an?
 a. array
 b. hashtable
 c. method
 d. function
-
+Answer: b
 What serves as the constructor in swift?
 a. className()
 b. constructor()
 c. init()
 d. deinit()
+Answer: c
