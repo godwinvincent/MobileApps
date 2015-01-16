@@ -35,7 +35,6 @@ class ViewController: UIViewController {
     @IBAction func ButtonClicked(sender: UIButton) {
         display.text = display.text! + sender.titleLabel!.text!
     }
-
     @IBAction func SubmitClicked(sender: UIButton) {
         num2 = display.text!.floatValue;
         
@@ -46,6 +45,14 @@ class ViewController: UIViewController {
         oper = sender.titleLabel!.text!
         num1 = display.text!.floatValue
         display.text = "";
+    }
+    
+    @IBAction func clear(sender: UIButton) {
+        oper = nil
+        num1 = nil
+        num2 = nil
+        answer = nil
+        display.text = ""
     }
     func calc() -> Float
     {

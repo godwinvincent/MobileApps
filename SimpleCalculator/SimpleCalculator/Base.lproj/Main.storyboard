@@ -16,21 +16,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="day-Us-Dvs">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Submit">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="177" y="469" width="49" height="30"/>
-                                </variation>
-                                <connections>
-                                    <action selector="SubmitClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SOV-tF-8bn"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vzM-vM-fFU">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vzM-vM-fFU">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="1">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
@@ -222,18 +211,42 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8JZ-MS-cMa">
                                 <rect key="frame" x="264" y="74" width="42" height="21"/>
+                                <color key="backgroundColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="0.089999999999999997" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="68" y="58" width="264" height="54"/>
                                 </variation>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="00q-P4-kYb">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Clear">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="68" y="469" width="135" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="SubmitClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nPT-3O-ruz"/>
+                                    <action selector="clear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="38Y-wZ-XwY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EtY-VW-Np8">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="211" y="469" width="121" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="SubmitClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3YX-zh-yl3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="day-Us-Dvs"/>
                                 <exclude reference="vzM-vM-fFU"/>
                                 <exclude reference="hn5-WH-aeS"/>
                                 <exclude reference="rVX-eH-dct"/>
@@ -250,11 +263,12 @@
                                 <exclude reference="aM9-Yw-oey"/>
                                 <exclude reference="Ssu-Of-r3m"/>
                                 <exclude reference="LRR-X0-tY5"/>
+                                <exclude reference="00q-P4-kYb"/>
+                                <exclude reference="EtY-VW-Np8"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
-                                <include reference="day-Us-Dvs"/>
                                 <include reference="vzM-vM-fFU"/>
                                 <include reference="hn5-WH-aeS"/>
                                 <include reference="rVX-eH-dct"/>
@@ -271,11 +285,13 @@
                                 <include reference="aM9-Yw-oey"/>
                                 <include reference="Ssu-Of-r3m"/>
                                 <include reference="LRR-X0-tY5"/>
+                                <include reference="00q-P4-kYb"/>
+                                <include reference="EtY-VW-Np8"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="display" destination="8JZ-MS-cMa" id="fLJ-LH-6wM"/>
+                        <outlet property="display" destination="8JZ-MS-cMa" id="eSs-qi-scD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
