@@ -47,6 +47,14 @@ class ViewController: UIViewController {
         display.text = "";
     }
     
+    @IBAction func backspace(sender: UIButton) {
+        if(countElements(display.text!) == 0){
+            
+        }
+        else{
+            display.text = display.text?.substringToIndex(advance(display.text!.startIndex,(countElements(display.text!))-1))
+        }
+    }
     @IBAction func clear(sender: UIButton) {
         oper = nil
         num1 = nil

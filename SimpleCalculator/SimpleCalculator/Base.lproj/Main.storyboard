@@ -146,7 +146,7 @@
                                     <rect key="frame" x="204" y="386" width="75" height="75"/>
                                 </variation>
                                 <connections>
-                                    <action selector="ButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="exE-Wi-yBU"/>
+                                    <action selector="backspace:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VYm-sM-0E5"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xs0-Ah-ewF">
